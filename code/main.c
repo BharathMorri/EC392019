@@ -44,11 +44,18 @@ int main (void)
   PORTD = (D << 2); 
   PORTD |= (2<< 3); 
  
+   
+ 
   //Generate clock 
   PORTB = ((0 <<  PB5)); 
+  
   _delay_ms (1000L); 
+  D=0; 
+  PORTD = (D << 2); 
+  PORTD |= (2<< 3); 
  
  } 
+  
 return 0; 
  
 }

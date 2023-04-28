@@ -143,8 +143,8 @@ $(TARGET).elf: $(OBJ)
 	$(CC) -c $(ALL_ASFLAGS) $< -o $@
 
 # Program the device.  
-program: $(TARGET).hex $(TARGET).eep
-	$(AVRDUDE) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH) $(AVRDUDE_WRITE_EEPROM)
+#program: $(TARGET).hex $(TARGET).eep
+	#$(AVRDUDE) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH) $(AVRDUDE_WRITE_EEPROM)
 
 # Target: clean project.
 clean:
